@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+    color: #B7B7B7;
+}
+
+body {
+    background-color: #0C0B0B;
+}
+
+.main-section {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    top: 0;
+    left: 20px;
+
+    margin: auto;
+    padding: 4rem;
+    
+    max-width: 610.500px;
+    height: min-content;
+    background-color: #0F0E0E;
+}
+
+img {
+    width: 60px;
+    border-radius: 60px;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 65px auto 80px;
+    
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+.name-nikiname {
+    width: max-content;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.nikiname {
+    font-size: 15px;
+}
+
+.edit {
+    background-color: #1A1A1A;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+    justify-self: end;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.main-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: .5rem;
+    margin: auto;
+}
+
+.boxs {
+    border-radius: 3px;
+    padding: 8px;
+}
+
+.info {
+    font-size: 13px;
+}
+
+#info-01 {
+    background-color: #046313;
+}
+
+#info-02 {
+    background-color: #044A7D;
+}
+
+#info-03 {
+    background-color: #725200;
+}
+
+.counter {
+    font-size: 30px;
+}
+
+@media (max-width: 530px) {
+    .main-section {
+        padding: 2rem 4rem;
+    }
+
+    .main-header {
+        grid-template-columns: 1fr;
+        row-gap: .3rem;
+    }
+
+    .main-header div, figure {
+        justify-self: center;
+    }
+
+    .nikiname {
+        text-align: center;
+    }
+
+    .main-article {
+        grid-template-columns: 1fr;
+        row-gap: .5rem;
+    }
+}
